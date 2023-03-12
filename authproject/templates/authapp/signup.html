@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'authapp/base.html' %}
+{% block base_block %}
+
+
+    <h1>Please Signup to dive...</h1>
+    <div class='container'>
+      <div class='jumbotron'>
+    <form method='POST'>
+      {% csrf_token %}
+      {{form.as_p}}
+      <br><br>
+      <input type="submit" class="btn btn-dark btn-lg" value="SignUp">
+    </form>
+  </div>
+</div>
+
+
+{% endblock %}

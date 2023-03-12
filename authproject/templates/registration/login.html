@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'authapp/base.html'%}
+{% block base_block %}
+<div class="container" align=center>
+  <div class="jumbotron">
+    <h1>Please Login to continue for examination...</h1>
+    <form method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+<button type="submit" class="btn btn-dark">Login</button>    </form>
+
+  </div>
+
+</div>
+{% endblock %}
